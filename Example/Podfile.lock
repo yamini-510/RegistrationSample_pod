@@ -1,0 +1,16 @@
+PODS:
+  - RegistrationSample_pod (0.1.0)
+
+DEPENDENCIES:
+  - RegistrationSample_pod (from `../`)
+
+EXTERNAL SOURCES:
+  RegistrationSample_pod:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RegistrationSample_pod: 9c0bfec8e937dfeb3d3905a72e0ab7ec2e259fab
+
+PODFILE CHECKSUM: e49d6962eaab78dec33620fa115491ffbbeed5c1
+
+COCOAPODS: 1.3.1

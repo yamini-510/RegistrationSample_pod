@@ -1,0 +1,6 @@
+framework module RegistrationSample_pod {
+  umbrella header "RegistrationSample_pod-umbrella.h"
+
+  export *
+  module * { export * }
+}
