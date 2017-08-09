@@ -54,6 +54,7 @@
         default:
             break;
     }
+    [self toolBarButtonSetting];
     return textField;
 }
 
