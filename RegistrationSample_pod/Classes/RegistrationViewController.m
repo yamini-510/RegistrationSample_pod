@@ -134,7 +134,8 @@
     
     [hide setTitle:@"Hide" forState:UIControlStateNormal];
     [hide setTitle:@"Show" forState:UIControlStateSelected];
-   
+    [hide setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+
     sampleTextField.rightViewMode=UITextFieldViewModeAlways;
     sampleTextField.rightView=hide;
     [hide addTarget:self action:@selector(hideBtnClicked: ) forControlEvents:UIControlEventTouchUpInside];
