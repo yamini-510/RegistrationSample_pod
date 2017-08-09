@@ -130,16 +130,30 @@
 
 -(void)rightViewOfTextField
 {
-    hide = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    hide=[[UIButton alloc]initWithFrame:CGRectMake(0, 5, 65, 20)];
+    
     [hide setTitle:@"Hide" forState:UIControlStateNormal];
-    [hide addTarget:self action:@selector(hideBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
-    sampleTextField.rightView = hide;
+    [hide setTitle:@"Show" forState:UIControlStateSelected];
+   
+    sampleTextField.rightViewMode=UITextFieldViewModeAlways;
+    sampleTextField.rightView=hide;
+    [hide addTarget:self action:@selector(hideBtnClicked: ) forControlEvents:UIControlEventTouchUpInside];
+    [sampleTextField addSubview:hide];
+
 }
 
 -(void)hideBtnClicked:(id)sender
 {
-    sampleTextField.secureTextEntry = NO;
-    [hide setTitle:@"Show" forState:UIControlStateNormal];
+    UIButton *btn = sender;
+    if ([btn isKindOfClass:[UIButton class]])
+    {
+        sampleTextField.secureTextEntry = NO;
+        [btn setSelected:!btn.selected];
+        if (!btn.selected)
+        {
+            sampleTextField.secureTextEntry = YES;
+        }
+    }
 }
 
 
