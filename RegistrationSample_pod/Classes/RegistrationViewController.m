@@ -67,7 +67,7 @@
                            [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(hideKeyBoard)],
                            nil];
     
-    [sampleTextField setInputView:numberToolbar];
+    [sampleTextField setInputAccessoryView:numberToolbar];
 }
 
 -(void)textFieldWithDatePicker:(UITextField *)textField
