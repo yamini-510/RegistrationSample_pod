@@ -32,7 +32,7 @@
 }
 
 
--(UITextField *)textField:(UITextField *)textField withKind:(kindOfObjectMethodNames)MethodName
++(UITextField *)textField:(UITextField *)textField withKind:(kindOfObjectMethodNames)MethodName
 {
     NSLog(@"hi new method");
     sampleTextField = textField;
@@ -59,7 +59,7 @@
     return textField;
 }
 
--(void)toolBarButtonSetting
++(void)toolBarButtonSetting
 {
     UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 50)];
     numberToolbar.barStyle = UIBarStyleDefault;
@@ -71,7 +71,7 @@
     [sampleTextField setInputAccessoryView:numberToolbar];
 }
 
--(void)setTextFieldFont
++(void)setTextFieldFont
 {
     if (self.view.frame.size.height == IPHONE_5_SCREEN_HEIGHT)
     {
@@ -81,7 +81,7 @@
 
 
 
--(void)textFieldWithDatePicker:(UITextField *)textField
++(void)textFieldWithDatePicker:(UITextField *)textField
 {
     UIDatePicker *datePicker = [[UIDatePicker alloc] init];
     datePicker.datePickerMode = UIDatePickerModeDate;
@@ -90,12 +90,12 @@
     [textField setInputView:datePicker];
 }
 
--(void)datePickerValueChanged:(id)sender
++(void)datePickerValueChanged:(id)sender
 {
     NSLog(@"Date Picker");
 }
 
--(NSString *)datePicker:(UITextField *)textField withMaxDate:(NSDate *)maxDate withMinDate:(NSDate *)minDate withFormat:(NSString *)dateFormat
++(NSString *)datePicker:(UITextField *)textField withMaxDate:(NSDate *)maxDate withMinDate:(NSDate *)minDate withFormat:(NSString *)dateFormat
 {
     UIDatePicker *datePicker = [[UIDatePicker alloc] init];
     datePicker.datePickerMode = UIDatePickerModeDate;
@@ -113,7 +113,7 @@
     return textField.text;
 }
 
--(void)ShowSelectedDate
++(void)ShowSelectedDate
 {
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     // [dateFormat setTimeZone:[NSTimeZone systemTimeZone]];
@@ -123,12 +123,12 @@
     NSLog(@"selected date %@ ",strDate);
 }
 
--(void)hideKeyBoard
++(void)hideKeyBoard
 {
     [sampleTextField resignFirstResponder];
 }
 
--(void)rightViewOfTextField
++(void)rightViewOfTextField
 {
     hide=[[UIButton alloc]initWithFrame:CGRectMake(0, 5, 65, 20)];
     
@@ -143,7 +143,7 @@
 
 }
 
--(void)hideBtnClicked:(id)sender
++(void)hideBtnClicked:(id)sender
 {
     UIButton *btn = sender;
     if ([btn isKindOfClass:[UIButton class]])

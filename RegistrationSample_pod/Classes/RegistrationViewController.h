@@ -32,12 +32,12 @@
 //- (IBAction)registerAction:(id)sender;
 //- (IBAction)datePickerAction:(id)sender;
 
--(UITextField *)textField:(UITextField *)textField withKind:(kindOfObjectMethodNames)MethodName;
++(UITextField *)textField:(UITextField *)textField withKind:(kindOfObjectMethodNames)MethodName;
 
--(NSString *)datePicker:(UITextField *)textField withMaxDate:(NSDate *)maxDate withMinDate:(NSDate *)minDate withFormat:(NSString *)dateFormat;
++(NSString *)datePicker:(UITextField *)textField withMaxDate:(NSDate *)maxDate withMinDate:(NSDate *)minDate withFormat:(NSString *)dateFormat;
 
--(void)hideKeyBoard;
++(void)hideKeyBoard;
 
--(void)setTextFieldFont;
++(void)setTextFieldFont;
 
 @end

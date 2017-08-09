@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0470F9B82A279E03BC3AD4719C7515AD /* RegistrationSample_pod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F35BE75DDD99789CDD475E1EC3C0A77E /* RegistrationSample_pod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B91A8BEB95381D92B5B0294306C3739 /* Pods-RegistrationSample_pod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDE7D540572B711B314898A19D69185 /* Pods-RegistrationSample_pod_Tests-dummy.m */; };
+		595398691F3B347B00D21A1C /* SettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 595398671F3B347B00D21A1C /* SettingViewController.h */; };
+		5953986A1F3B347B00D21A1C /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595398681F3B347B00D21A1C /* SettingViewController.m */; };
 		596FC8111F39FFFC000C8AEA /* RegistrationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 596FC80E1F39FFFC000C8AEA /* RegistrationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		596FC8121F39FFFC000C8AEA /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596FC80F1F39FFFC000C8AEA /* RegistrationViewController.m */; };
 		59D433CAFA62BC9A619EF831DF639B86 /* RegistrationSample_pod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F09B4DA67CEDBFCFC0C666D95C2427 /* RegistrationSample_pod-dummy.m */; };
@@ -36,6 +38,8 @@
 		38B1415E378A461A859E7039DB5389CF /* Pods-RegistrationSample_pod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RegistrationSample_pod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3EA9ED4AFD0FDB917D7445A3598003F5 /* Pods-RegistrationSample_pod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RegistrationSample_pod_Tests.modulemap"; sourceTree = "<group>"; };
 		58FE502D86211287994C95779AEF6671 /* Pods-RegistrationSample_pod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RegistrationSample_pod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		595398671F3B347B00D21A1C /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		595398681F3B347B00D21A1C /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		596FC80E1F39FFFC000C8AEA /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = RegistrationSample_pod/Classes/RegistrationViewController.h; sourceTree = "<group>"; };
 		596FC80F1F39FFFC000C8AEA /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = RegistrationSample_pod/Classes/RegistrationViewController.m; sourceTree = "<group>"; };
 		59F2D95D1F3AE83900604691 /* EnumHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnumHeader.h; path = RegistrationSample_pod/Classes/EnumHeader.h; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				59F2D95D1F3AE83900604691 /* EnumHeader.h */,
 				596FC80E1F39FFFC000C8AEA /* RegistrationViewController.h */,
 				596FC80F1F39FFFC000C8AEA /* RegistrationViewController.m */,
+				595398671F3B347B00D21A1C /* SettingViewController.h */,
+				595398681F3B347B00D21A1C /* SettingViewController.m */,
 				7F3A0C5590D6B4A53BAC4B16E2245617 /* ReplaceMe.m */,
 				11D3026036F8626006980B6D34D20A0E /* Support Files */,
 			);
@@ -190,6 +196,7 @@
 			files = (
 				596FC8111F39FFFC000C8AEA /* RegistrationViewController.h in Headers */,
 				973D9BA4741A21602D245095076B14E2 /* Pods-RegistrationSample_pod_Tests-umbrella.h in Headers */,
+				595398691F3B347B00D21A1C /* SettingViewController.h in Headers */,
 				59F2D95E1F3AE83900604691 /* EnumHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +282,7 @@
 			files = (
 				3B91A8BEB95381D92B5B0294306C3739 /* Pods-RegistrationSample_pod_Tests-dummy.m in Sources */,
 				596FC8121F39FFFC000C8AEA /* RegistrationViewController.m in Sources */,
+				5953986A1F3B347B00D21A1C /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
