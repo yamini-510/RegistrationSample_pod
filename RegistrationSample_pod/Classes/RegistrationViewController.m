@@ -37,17 +37,17 @@
     NSLog(@"hi new method");
     sampleTextField = textField;
     switch (MethodName) {
-        case EmailField:
+            case EmailField:
             textField.keyboardType = UIKeyboardTypeEmailAddress;
             break;
-        case PasswordField:
+            case PasswordField:
             textField.secureTextEntry = YES;
             break;
-        case DateOfBirthField:
+            case DateOfBirthField:
             textField.keyboardAppearance = NO;
             [self textFieldWithDatePicker:textField];
             break;
-        case PhoneNumber:
+            case PhoneNumber:
             textField.keyboardType = UIKeyboardTypePhonePad;
             break;
             
@@ -55,6 +55,18 @@
             break;
     }
     return textField;
+}
+
+-(void)toolBarButtonSetting
+{
+    UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 50)];
+    numberToolbar.barStyle = UIBarStyleDefault;
+    numberToolbar.items = [NSArray arrayWithObjects:
+                           [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                           [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(hideKeyBoard)],
+                           nil];
+    
+    [sampleTextField setInputView:numberToolbar];
 }
 
 -(void)textFieldWithDatePicker:(UITextField *)textField
@@ -73,11 +85,11 @@
 
 -(NSString *)datePicker:(UITextField *)textField withMaxDate:(NSDate *)maxDate withMinDate:(NSDate *)minDate withFormat:(NSString *)dateFormat
 {
-        UIDatePicker *datePicker = [[UIDatePicker alloc] init];
+    UIDatePicker *datePicker = [[UIDatePicker alloc] init];
     datePicker.datePickerMode = UIDatePickerModeDate;
     datePicker.maximumDate = maxDate;
     datePicker.minimumDate = minDate;
-   //[datePicker addTarget:self action:@selector(datePickerValueChanged:withFormat:withTextField:) forControlEvents:UIControlEventValueChanged];
+    //[datePicker addTarget:self action:@selector(datePickerValueChanged:withFormat:withTextField:) forControlEvents:UIControlEventValueChanged];
     UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, -44,datePicker.frame.size.width, 44)];
     [toolBar setTintColor:[UIColor grayColor]];
     UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(ShowSelectedDate)];
@@ -85,7 +97,7 @@
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:cancelBtn,space,doneBtn, nil]];
     [datePicker addSubview:toolBar];
-   [textField setInputView:datePicker];
+    [textField setInputView:datePicker];
     return textField.text;
 }
 
@@ -94,7 +106,7 @@
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     // [dateFormat setTimeZone:[NSTimeZone systemTimeZone]];
     [dateFormat setDateFormat:@"yyyy-dd-MM"];
-   NSString *strDate = [NSString stringWithFormat:@"%@",[dateFormat stringFromDate:_picker.date]];
+    NSString *strDate = [NSString stringWithFormat:@"%@",[dateFormat stringFromDate:_picker.date]];
     sampleTextField.text = strDate;
     NSLog(@"selected date %@ ",strDate);
 }
@@ -117,14 +129,16 @@
     sampleTextField.secureTextEntry = NO;
     [hide setTitle:@"Show" forState:UIControlStateNormal];
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

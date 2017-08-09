@@ -12,6 +12,7 @@
 		596FC8111F39FFFC000C8AEA /* RegistrationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 596FC80E1F39FFFC000C8AEA /* RegistrationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		596FC8121F39FFFC000C8AEA /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596FC80F1F39FFFC000C8AEA /* RegistrationViewController.m */; };
 		59D433CAFA62BC9A619EF831DF639B86 /* RegistrationSample_pod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F09B4DA67CEDBFCFC0C666D95C2427 /* RegistrationSample_pod-dummy.m */; };
+		59F2D95E1F3AE83900604691 /* EnumHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F2D95D1F3AE83900604691 /* EnumHeader.h */; };
 		973D9BA4741A21602D245095076B14E2 /* Pods-RegistrationSample_pod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1AAA71AE6D662614F99400FD8F96BED /* Pods-RegistrationSample_pod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD0F8CBA41C47772E808CC73A9678581 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A0C5590D6B4A53BAC4B16E2245617 /* ReplaceMe.m */; };
 		CCFD1C554A79A05F2120A0C36834E502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -37,6 +38,7 @@
 		58FE502D86211287994C95779AEF6671 /* Pods-RegistrationSample_pod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RegistrationSample_pod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		596FC80E1F39FFFC000C8AEA /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = RegistrationSample_pod/Classes/RegistrationViewController.h; sourceTree = "<group>"; };
 		596FC80F1F39FFFC000C8AEA /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = RegistrationSample_pod/Classes/RegistrationViewController.m; sourceTree = "<group>"; };
+		59F2D95D1F3AE83900604691 /* EnumHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnumHeader.h; path = RegistrationSample_pod/Classes/EnumHeader.h; sourceTree = "<group>"; };
 		5A0FC48855424E68B3CDDC1B35A6F731 /* Pods-RegistrationSample_pod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RegistrationSample_pod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		633C5B8B16FA7BDC894277DC450D6503 /* RegistrationSample_pod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RegistrationSample_pod-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -107,6 +109,7 @@
 		496F8BCAE2712973BEA62201A48C9B83 /* RegistrationSample_pod */ = {
 			isa = PBXGroup;
 			children = (
+				59F2D95D1F3AE83900604691 /* EnumHeader.h */,
 				596FC80E1F39FFFC000C8AEA /* RegistrationViewController.h */,
 				596FC80F1F39FFFC000C8AEA /* RegistrationViewController.m */,
 				7F3A0C5590D6B4A53BAC4B16E2245617 /* ReplaceMe.m */,
@@ -187,6 +190,7 @@
 			files = (
 				596FC8111F39FFFC000C8AEA /* RegistrationViewController.h in Headers */,
 				973D9BA4741A21602D245095076B14E2 /* Pods-RegistrationSample_pod_Tests-umbrella.h in Headers */,
+				59F2D95E1F3AE83900604691 /* EnumHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
