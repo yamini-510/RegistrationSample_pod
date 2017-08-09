@@ -41,6 +41,7 @@
             textField.keyboardType = UIKeyboardTypeEmailAddress;
             break;
             case PasswordField:
+            [self rightViewOfTextField];
             textField.secureTextEntry = YES;
             break;
             case DateOfBirthField:
@@ -69,6 +70,16 @@
     
     [sampleTextField setInputAccessoryView:numberToolbar];
 }
+
+-(void)setTextFieldFont
+{
+    if (self.view.frame.size.height == IPHONE_5_SCREEN_HEIGHT)
+    {
+        
+    }
+}
+
+
 
 -(void)textFieldWithDatePicker:(UITextField *)textField
 {
