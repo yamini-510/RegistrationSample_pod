@@ -37,7 +37,6 @@
 		58FE502D86211287994C95779AEF6671 /* Pods-RegistrationSample_pod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RegistrationSample_pod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		596FC80E1F39FFFC000C8AEA /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = RegistrationSample_pod/Classes/RegistrationViewController.h; sourceTree = "<group>"; };
 		596FC80F1F39FFFC000C8AEA /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = RegistrationSample_pod/Classes/RegistrationViewController.m; sourceTree = "<group>"; };
-		596FC8101F39FFFC000C8AEA /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegistrationViewController.xib; path = RegistrationSample_pod/Classes/RegistrationViewController.xib; sourceTree = "<group>"; };
 		5A0FC48855424E68B3CDDC1B35A6F731 /* Pods-RegistrationSample_pod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RegistrationSample_pod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		633C5B8B16FA7BDC894277DC450D6503 /* RegistrationSample_pod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RegistrationSample_pod-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -110,7 +109,6 @@
 			children = (
 				596FC80E1F39FFFC000C8AEA /* RegistrationViewController.h */,
 				596FC80F1F39FFFC000C8AEA /* RegistrationViewController.m */,
-				596FC8101F39FFFC000C8AEA /* RegistrationViewController.xib */,
 				7F3A0C5590D6B4A53BAC4B16E2245617 /* ReplaceMe.m */,
 				11D3026036F8626006980B6D34D20A0E /* Support Files */,
 			);
